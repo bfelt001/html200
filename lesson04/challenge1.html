@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let number = prompt("Please enter a number:", "5");
+  if (number == null || number == "") {
+    text = "Error";
+  } else {
+    alert(number * number);
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
